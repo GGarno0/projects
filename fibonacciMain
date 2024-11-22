@@ -1,0 +1,19 @@
+package es.iessoterohernandez.daw.endes.fibonacciMain;
+
+import java.util.*;
+
+import es.iessoterohernandez.daw.endes.fibonacci.*;
+
+public class FibonacciMain {
+    public static void main(String[] args) {
+    	Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Introduce un número para calcular Fibonacci:");
+        int n = scanner.nextInt();
+
+        Fibonacci fibonacci = new Fibonacci();
+        int resultado = fibonacci.calcularFibonacci(n);
+
+        System.out.println("Fibonacci(" + n + "): " + resultado);
+    }
+}
